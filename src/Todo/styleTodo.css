@@ -1,0 +1,63 @@
+body {
+  background-image: url(https://time-blog.ru/wp-content/uploads/2019/11/povtoryayushchiesya-zadachi.png);
+  background-size: cover;
+  background-position: center;
+  height: 950px;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+.todo__list {
+  margin-top: 100px;
+}
+
+.title {
+  font-size: 60px;
+}
+
+.todo__inner {
+  display: flex;
+  justify-content: space-between;
+  width: 470px;
+  margin-bottom: 40px;
+}
+
+.input__text {
+  background-color: white;
+  width: 260px;
+  height: 30px;
+  border: 2px solid rgba(128, 193, 108, 98);
+}
+
+.btn__add,
+.btn__delete,
+.btn__clear {
+  background-color: white;
+  min-width: 100px;
+  height: 30px;
+  border: 2px solid rgba(255, 128, 128, 240);
+  font-size: 18px;
+}
+
+.todo__item {
+  display: flex;
+  justify-content: space-between;
+  width: 470px;
+  max-width: 470px;
+
+  margin-bottom: 6px;
+}
+
+.checkbox {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.todo__value {
+  font-size: 18px;
+}
