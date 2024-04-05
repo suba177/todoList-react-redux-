@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import TodoItem from './Todo/Todo';
+import { Counter } from './redux/Counter';
 
 export default function App() {
   return (
     <>
       <TodoList></TodoList>
+      <Counter></Counter>
     </>
   );
 }
