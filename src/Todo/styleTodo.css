@@ -12,6 +12,12 @@ body {
 
 .todo__list {
   margin-top: 100px;
+  min-height: 250px;
+  border-bottom: 2px solid black;
+}
+
+.todo__list-redux {
+  margin-top: 50px;
 }
 
 .title {

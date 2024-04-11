@@ -6,27 +6,17 @@ import App from './App.js';
 import './reset.css';
 import './Todo/styleTodo.css';
 // REDUX
-import { createStore } from 'redux';
+import { createStore, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
-// Redux code
-const defaultState = {
-  cash: 0,
-};
+import { todoReducer } from './todo-redux/todoReducer.js';
 
-const reducer = (state = defaultState, action) => {
-  switch (action.type) {
-    case 'ADD_CASH':
-      return { ...state, cash: state.cash + action.payload };
-    case 'GET_CASH':
-      return { ...state, cash: state.cash - action.payload };
+// ROOT Redux
+const rootReducer = combineReducers({
+  todo: todoReducer,
+});
 
-    default:
-      return state;
-  }
-};
-
-const store = createStore(reducer);
-// ROOT
+const store = createStore(rootReducer);
+// ROOT React
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

@@ -32,7 +32,7 @@ const TodoList = () => {
 
   return (
     <div className="todo__list">
-      <h1 className="title">Todo list</h1>
+      <h1 className="title">Todo list React Hooks</h1>
       <div className="todo__inner">
         <input
           tabIndex="1"
